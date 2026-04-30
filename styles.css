@@ -540,7 +540,13 @@ nav a:hover { color: var(--accent); }
 /* === Responsive === */
 @media (max-width: 640px) {
   header { grid-template-columns: 1fr; }
-  .portrait-wrap { display: none; }
+  .portrait-wrap { 
+    display: block;
+    margin-top: 2rem;
+    max-width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
   .teaching-grid { grid-template-columns: 1fr; }
-  nav { gap: 1rem; }
+  nav { gap: 1rem; flex-wrap: wrap; justify-content: center; }
 }
