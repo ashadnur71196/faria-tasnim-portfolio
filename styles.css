@@ -493,6 +493,9 @@ nav a {
 }
 nav a:hover { color: var(--accent); }
 .nav-name {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
   font-family: 'EB Garamond', serif;
   font-size: 1rem;
   font-weight: 500;
@@ -500,6 +503,14 @@ nav a:hover { color: var(--accent); }
   margin-right: auto;
   text-decoration: none;
   transition: color 0.2s;
+  white-space: nowrap;
+}
+.nav-icon {
+  width: 26px;
+  height: 26px;
+  border: 1px solid var(--rule);
+  border-radius: 6px;
+  flex: 0 0 auto;
 }
 .nav-name:hover {
   color: var(--accent);
